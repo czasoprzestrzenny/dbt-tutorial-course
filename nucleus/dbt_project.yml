@@ -28,3 +28,7 @@ models:
     +persist_docs:
       relation: true
       columns: true
+    +hours_to_expiration: 168
+tests:
+  nucleus:
+    +severity: warn
