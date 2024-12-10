@@ -12,9 +12,11 @@
 }}
 
 WITH source AS (
-	SELECT *
+	SELECT *,
+	CURRENT_TIMESTAMP() as inserted_at
 
 	FROM {{ source('thelook_ecommerce', 'events') }}
+	where created_at > '2024-12-01'
 )
 
 SELECT
