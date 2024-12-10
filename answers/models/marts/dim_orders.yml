@@ -57,7 +57,7 @@ models:
         # However, for simplicity in this project we just use one
 
       - name: num_items_ordered
-        description: "Number of items in the order"
+        description: {{doc('status')}}
 
 
     # Columns from int_ecommerce__order_items_product

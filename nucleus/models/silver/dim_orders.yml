@@ -55,6 +55,7 @@ models:
       - name: order_status
         # Best practice would be to use doc() references for all common columns
         # However, for simplicity in this project we just use one
+        description: "{{ doc('status') }}"
 
       - name: num_items_ordered
         description: "Number of items in the order"
