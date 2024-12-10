@@ -16,7 +16,7 @@ WITH source AS (
 	CURRENT_TIMESTAMP() as inserted_at
 
 	FROM {{ source('thelook_ecommerce', 'events') }}
-	where created_at > '2024-12-01'
+	--where created_at < '2023-01-01'
 )
 
 SELECT
@@ -32,7 +32,8 @@ SELECT
 	browser,
 	traffic_source,
 	uri AS web_link,
-	event_type
+	event_type,
+	inserted_at
 
 
 FROM source
