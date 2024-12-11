@@ -1,0 +1,29 @@
+nucleus:
+  outputs:
+    dev:
+      dataset: dbt_kingfisher_dev
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: dbtv2-443910
+      threads: 60
+      type: bigquery
+    production:
+      dataset: dbt_kingfisher_prod
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: dbtv2-443910
+      threads: 60
+      type: bigquery
+  target: dev
+
+#higher priority has a file in ~/.dbt profiles.yml
+
+#dbt run -s bronze_ecommerce__products --target production
+#dbt --profiles-dir ./dbt_cloud_profiles run -s stg_ecommerce__products
+
