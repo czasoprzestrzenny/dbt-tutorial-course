@@ -1,3 +1,7 @@
+{{
+	config(docs={'node_color': 'tan'})
+}}
+
 WITH source AS (
 	SELECT *
 

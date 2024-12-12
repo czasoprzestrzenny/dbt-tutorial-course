@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: gold_dim_orders
+
+    description: "Table of order level information"

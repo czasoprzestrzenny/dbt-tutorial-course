@@ -1,3 +1,8 @@
+{{ config(tags=['silver'],
+		  docs={'node_color': 'silver'}) }}
+
+
+
 WITH
 
 -- Aggregate measures

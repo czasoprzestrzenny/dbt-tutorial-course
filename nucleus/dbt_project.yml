@@ -29,6 +29,16 @@ models:
       relation: true
       columns: true
     +hours_to_expiration: 168
+    # bronze:
+    #   +docs:
+    #     node_color: "bronze"
+    # silver:
+    #   +docs:
+    #     node_color: "silver"
+    # gold:
+    #   +docs:
+    #     node_color: "gold"
+
 tests:
   nucleus:
     +severity: warn

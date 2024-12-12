@@ -1,3 +1,7 @@
+{{
+	config(docs={'node_color': 'tan'})
+}}
+
 WITH products AS (
 	SELECT
 		product_id,

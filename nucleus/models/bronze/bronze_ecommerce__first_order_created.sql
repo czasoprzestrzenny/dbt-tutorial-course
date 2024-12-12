@@ -1,6 +1,6 @@
 
 {{
-	config(materialized='ephemeral')
+	config(materialized='ephemeral', docs={'node_color': 'tan'})
 }}
 
 

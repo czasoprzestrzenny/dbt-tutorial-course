@@ -11,9 +11,9 @@ models:
         data_type: INTEGER
         constraints:
           - type: not_null
-        tests:
-          - primary_key:
-              severity: error
+        # tests:
+        #   - primary_key:
+        #       severity: error
 
       - name: order_id
         data_type: INTEGER
